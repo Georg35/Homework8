@@ -31,27 +31,27 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             if (i == arr.length - 1) {
                 System.out.println(arr[i]);
-                break;
+            } else {
+                System.out.print(arr[i] + ", ");
             }
-            System.out.print(arr[i] + ", ");
         }
+
         float[] box = new float[]{1.57f, 7.654f, 9.986f};
         for (int i = 0; i < box.length; i++) {
             if (i == box.length - 1) {
                 System.out.println(box[i]);
-                break;
+            } else {
+                System.out.print(box[i] + ", ");
             }
-            System.out.print(box[i] + ", ");
         }
         int[] shelf = new int[]{3, 5, 7, 9};
         for (int i = 0; i < shelf.length; i++) {
             if (i == shelf.length - 1) {
                 System.out.println(shelf[i]);
-                break;
+            } else {
+                System.out.print(shelf[i] + ", ");
             }
-            System.out.print(shelf[i] + ", ");
         }
-
     }
 
     public static void task3() {
@@ -60,31 +60,31 @@ public class Main {
         arr[0] = 1;
         arr[1] = 2;
         arr[2] = 3;
-        for (int i = 2; i >= 0; i--) {
+        for (int i = arr.length - 1; i >= 0; i--) {
             if (i == 0) {
                 System.out.println(arr[i]);
-                break;
+            } else {
+                System.out.print(arr[i] + ", ");
             }
-
-            System.out.print(arr[i] + ", ");
         }
         float[] box = new float[]{1.57f, 7.654f, 9.986f};
-        for (int i = 2; i >= 0; i--) {
+        for (int i = box.length - 1; i >= 0; i--) {
             if (i == 0) {
                 System.out.println(box[i]);
-                break;
+            } else {
+                System.out.print(box[i] + ", ");
             }
-            System.out.print(box[i] + ", ");
         }
         int[] shelf = new int[]{3, 5, 7, 9};
-        for (int i = 3; i >= 0; i--) {
+        for (int i = shelf.length -1; i >= 0; i--) {
             if (i == 0) {
                 System.out.println(shelf[i]);
-                break;
+            } else {
+                System.out.print(shelf[i] + ", ");
             }
-            System.out.print(shelf[i] + ", ");
         }
     }
+
 
     public static void task4() {
         System.out.println("Задача 4");
@@ -95,9 +95,8 @@ public class Main {
         for (int i = 0; i < 3; i++) {
             if (arr[i] % 2 != 0)
             arr[i]++;}
-            {
-                System.out.println(Arrays.toString(arr));
-            }
+        System.out.println(Arrays.toString(arr));
+
         }
     }
 
